@@ -8,11 +8,97 @@
     <title>Proyecto con Bootstrap</title>
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- scroll raveal-->
+    <script src="js/scrollreveal.js"></script>
+    <!-- custom css-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-    <h1>Prueba con bootstrap compiled</h1>
-    <p>Bienvenido</p>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 100vh;">
+                <img src="/src/img/tecnologia.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 100vh;">
+                <img src="/src/img/tecnologia2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 100vh;">
+                <img src="/src/img/tecnologia3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Navegacion-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="/src/index.html">
+            <img src="/src/img/logo-intelix-white.png" width="130" height="35" loading="lazy" alt="Intelix logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#header">Servicios </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- Header-->
+    <header class="main-header" id="header">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="mt-1">
+
+                    <div class="header-carrusel">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
     <!-- Bootstrap js-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
