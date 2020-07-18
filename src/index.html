@@ -8,15 +8,136 @@
     <title>Proyecto con Bootstrap</title>
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+
+
+<!--
+    <style >
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: wheat;
+            overflow: hidden;
+        }
+        .panel:hover{
+            background-color: #00dfdf;
+        }
+    </style>
+-->
 </head>
 
 <body>
     <h1>Prueba con bootstrap compiled</h1>
     <p>Bienvenido</p>
+<hr>
+    <p>Sección de servicios</p>
+    <p>Acordeón de servicios</p>
+<hr>
+    <p>Acordeón de servicios básico usando sólo botones y con hover, solo se muestra un párrafo de texto por
+    sección de servicios y una foto al lado del texto</p>
+       <button class="accordion">Sección 1 </button>
+        <div class="panel">
+            <p>Panel de texto de prueba</p>
+            <p>En este acordeón se introducen los principios básicos para
+            su uso</p>
+            <p>Observe que se le incluyó una imagen al mismo</p>
+            <div class="view z-depth-1">
+                <img src="./img/logo.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+
+    <button class="accordion">Sección 2: Servicios de prueba para Intelix </button>
+        <div class="panel">
+            <p>Sección 2.1: En esta sección se habla específicamente del tipo de actividades del servicio</p>
+        </div>
+
+
+<hr>
+<hr>
+
+ <p>Segundo acordeón de servicios con más funcionalidades, este fue realizado
+ con cards.</p>
+ <div class="accordion md-accordion accordion-3 z-depth-1-half" id="accordion2"
+      role="tablist" aria-multiselectable="true">
+     <h2 class="text-center text-uppercase">Servicios</h2>
+     <hr>
+     <div class="card">
+         <!--Header-->
+         <div class="card-header" role="tab" id="heading3">
+             <a data-parent="#accordion2" href="#collapse2" data-toggle="collapse"
+             aria-expanded="true" aria-controls="collapse2">
+                 <h3 class}="mb-0 mt-3">
+                     Sección 1
+                 </h3>
+             </a>
+         </div>
+
+         <!--Cuerpo del card-->
+         <div id="collapse2" class="collapse show" role="tabpanel"
+              aria-labelledly="heading3" data-parent="#accordion2">
+             <div class="card-body pt-0">
+                 <p>Sección 1.1</p>
+             </div>
+
+         </div>
+
+     </div>
+
+
+
+     <div class="card">
+         <!--Header-->
+         <div class="card-header" role="tab" id="heading4">
+             <a data-parent="#accordion2" href="#collapse3" data-toggle="collapse"
+                aria-expanded="true" aria-controls="collapse3">
+                 <h3 class}="mb-0 mt-3">
+                     Sección 2
+                 </h3>
+             </a>
+         </div>
+
+         <!--Cuerpo del card-->
+         <div id="collapse3" class="collapse show" role="tabpanel"
+              aria-labelledly="heading4" data-parent="#accordion2">
+             <div class="card-body pt-0">
+                 <p>Sección 2.1</p>
+             </div>
+
+         </div>
+
+     </div>
+
+
+
+ </div>
+
+
+
+
     <!-- Bootstrap js-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/acordeon.js"></script>
 </body>
 
 </html>
