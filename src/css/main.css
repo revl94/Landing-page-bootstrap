@@ -1,0 +1,14 @@
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+
+.main-header {
+    background: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 700px;
+    position: relative;
+    opacity: 0.6;
+}
