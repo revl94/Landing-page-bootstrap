@@ -12,6 +12,8 @@
     <script src="js/scrollreveal.js"></script>
     <!-- custom css-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Validaciones-->
+    <script src="js/validar.js"></script>
 </head>
 
 <body>
@@ -24,21 +26,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active" style="height: 100vh;">
-                <img src="/src/img/tecnologia.jpg" class="d-block w-100" alt="...">
+                <img src="/src/img/tecnologia.jpg" class="d-block w-100 img-fluid " alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div class="carousel-item" style="height: 100vh;">
-                <img src="/src/img/tecnologia2.jpg" class="d-block w-100" alt="...">
+                <img src="/src/img/tecnologia2.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item" style="height: 100vh;">
-                <img src="/src/img/tecnologia3.jpg" class="d-block w-100" alt="...">
+                <img src="/src/img/tecnologia3.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -74,7 +76,7 @@
                     <a class="nav-link" href="#">Acerca de</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
 
@@ -86,23 +88,90 @@
     <header class="main-header" id="header">
 
         <div class="container">
-            <div class="row">
-
-                <div class="mt-1">
-
-                    <div class="header-carrusel">
-
-                    </div>
-                </div>
-            </div>
+            <h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam beatae blanditiis vero a nisi, totam porro! Minima, dolores. Nulla iusto in atque minus expedita sapiente ab, blanditiis nesciunt exercitationem nemo.
+            </h1>
 
         </div>
 
     </header>
+
+    <!-- Contacto-->
+
+    <div class="container mb-5">
+        <footer id="contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="text ml-4 mt-5">
+                        <h1>Contactanos</h1>
+
+                    </div>
+                    <div class="col-12 col-md-5 col-sm-6 col-lg-5 ml-auto">
+                        <form class="card mt-5 ml-5" onsubmit="return validar();">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" id="nombre" placeholder="Nombre" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-outline-secondary btn-block">Enviar </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
     <!-- Bootstrap js-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.carousel', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+        sr.reveal('.navbar', {
+            duration: 2000,
+            origin: 'botton'
+        });
+
+        sr.reveal('.text', {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px'
+        });
+        sr.reveal('.card', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+        sr.reveal('.btn', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px',
+            delay: 1000
+        });
+        // smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
