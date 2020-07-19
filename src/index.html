@@ -8,6 +8,8 @@
     <title>Proyecto con Bootstrap</title>
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Tipo de letra css-->
+    <link rel="stylesheet" href="css/css3.css">
     <!-- scroll raveal-->
     <script src="js/scrollreveal.js"></script>
     <!-- custom css-->
@@ -26,21 +28,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active" style="height: 100vh;">
-                <img src="/src/img/tecnologia.jpg" class="d-block w-100 img-fluid " alt="...">
+                <img src="/src/img/tecnologia.jpg" style="height: 100vh;" class="d-block w-100 img-fluid " alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div class="carousel-item" style="height: 100vh;">
-                <img src="/src/img/tecnologia2.jpg" class="d-block w-100 img-fluid" alt="...">
+                <img src="/src/img/tecnologia2.jpg" style="height: 100vh;" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item" style="height: 100vh;">
-                <img src="/src/img/tecnologia3.jpg" class="d-block w-100 img-fluid" alt="...">
+                <img src="/src/img/tecnologia3.jpg" style="height: 100vh;" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -98,36 +100,36 @@
 
     <!-- Contacto-->
 
-    <div class="container mb-5">
-        <footer id="contacto">
-            <div class="container">
-                <div class="row">
-                    <div class="text ml-4 mt-5">
-                        <h1>Contactanos</h1>
 
-                    </div>
-                    <div class="col-12 col-md-5 col-sm-6 col-lg-5 ml-auto">
-                        <form class="card mt-5 ml-5" onsubmit="return validar();">
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <input type="text" id="nombre" placeholder="Nombre" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" id="email" placeholder="email" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-outline-secondary btn-block">Enviar </button>
-                            </div>
-                        </form>
-                    </div>
+    <footer class="pb-2">
+        <div class="container" id="contacto">
+            <div class="row">
+                <div class="text col-md-6 topmargin-sm">
+                    <h3>Contactanos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo nemo nisi ducimus modi ipsam, porro, quam iste aliquam maiores eaque mollitia minus quae ad dolorum laboriosam aut vero! Sapiente.</p>
 
                 </div>
-            </div>
+                <div class=" col-md-6 topmargin-sm">
+                    <form class="card" onsubmit="return validar();">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="text" id="nombre" placeholder="Nombre" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary btn-block">Enviar </button>
+                        </div>
+                    </form>
+                </div>
 
-        </footer>
-    </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- Bootstrap js-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
