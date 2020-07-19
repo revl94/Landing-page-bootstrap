@@ -1,14 +1,30 @@
 .navbar .nav-item .nav-link {
     color: #fff;
 }
+#contacto {
+    position: relative;
+    background-position: center;
+    min-height: 320px;
+}
 
-.main-header {
-    background: url(../img/background.png);
+#contacto::before {
+    content: "";
+    background: url(../img/contacto_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    min-height: 700px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .5;
+}
+
+.text {
     position: relative;
-    opacity: 0.6;
+    color: black;
+    text-align: justify;
+    font-size: 14rem;
+    padding-left: 50px
 }
