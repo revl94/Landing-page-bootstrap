@@ -8,6 +8,8 @@
     <title>Proyecto con Bootstrap</title>
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Tipo de letra css-->
     <link rel="stylesheet" href="css/css3.css">
     <!-- scroll raveal-->
@@ -72,13 +74,14 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#header">Servicios </a>
+                    <a class="nav-link" href="#header">Servicios</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Acerca de</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                   <a class="nav-link" href="#contacto"> Contacto</a>
+
                 </li>
             </ul>
 
@@ -89,11 +92,82 @@
     <!-- Header-->
     <header class="main-header" id="header">
 
-        <div class="container">
-            <h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam beatae blanditiis vero a nisi, totam porro! Minima, dolores. Nulla iusto in atque minus expedita sapiente ab, blanditiis nesciunt exercitationem nemo.
-            </h1>
+        <div class="container" id="header">
+            <div class="accordion" id="accordion" role="tablist"
+                 aria-multiselectable="true">
+                <h2 class="text-uppercase text-center">Servicios</h2>
+                <hr class="mb-0">
 
+                <div class="card">
+                    <div class="card-header" role="tab" id="heading1">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+                           aria-expanded="true" aria-controls="collapse1">
+                            <h5>
+                                <i class="fa fa-motorcycle" aria-hidden="false"></i> Sección 1: Automotriz
+                                <i class="fa fa-caret-down fa-xs rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+                    <div id="collapse1" class="collapse show"
+                         role="tabpanel" data-parent="#accordion" aria-labelledby="heading1">
+
+                        <div clas="card-body pt-0">
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                                wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.
+                            </p>
+
+
+                        </div>
+
+                        <div class="view z-depth-1">
+
+                            <img src="https://mdbootstrap.com/img/Photos/Others/nature.jpeg" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="heading2">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"
+                           aria-expanded="true" aria-controls="collapse2">
+                            <h5>Sección 2 <i class="fa fa-caret-down fa-xs"></i></h5>
+
+                        </a>
+                    </div>
+                    <div id="collapse2" class="collapse show"
+                         role="tabpanel" data-parent="#accordion" aria-labelledby="heading2">
+
+                        <div clas="card-body pt-0">
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                                wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
         </div>
 
     </header>
@@ -105,7 +179,7 @@
         <div class="container" id="contacto">
             <div class="row">
                 <div class="text col-md-6 topmargin-sm">
-                    <h3>Contactanos</h3>
+                    <h3>Contáctanos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo nemo nisi ducimus modi ipsam, porro, quam iste aliquam maiores eaque mollitia minus quae ad dolorum laboriosam aut vero! Sapiente.</p>
 
                 </div>
@@ -129,7 +203,12 @@
             </div>
         </div>
 
+
+
     </footer>
+
+
+
 
     <!-- Bootstrap js-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>

@@ -87,3 +87,24 @@
     body::-webkit-scrollbar-thumb:hover {
         background: #414141;
     }
+
+
+    .accordion {
+        width: 70%;
+        max-width: fit-content;
+        margin: auto;
+        transition: all 0.4s ease;
+    }
+
+    .accordion i.fa-caret-down{
+        right: 12px;
+        left: auto;
+    }
+
+    img {
+        position: center;
+        width: 60%;
+        height: 50%;
+    }
+
+
