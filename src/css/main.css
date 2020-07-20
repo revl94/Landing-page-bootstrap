@@ -111,3 +111,7 @@
     h5 {
         color: black;
     }
+    .card-body {
+        text-align: justify;
+        padding-left: 30px;
+    }
