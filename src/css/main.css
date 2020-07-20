@@ -7,10 +7,51 @@
         color: #fff;
     }
     
+    #header {
+        position: relative;
+        background-position: center;
+        min-height: 320px;
+    }
+    
+    #header::before {
+        content: "";
+        background: url(../img/servicios.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .5;
+    }
+    
+    #acercaDe {
+        position: relative;
+        background-position: center;
+        min-height: 320px;
+    }
+    
+    #acercaDe::before {
+        content: "";
+        background: url(../img/equipo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .6;
+    }
+    
     #contacto {
         position: relative;
         background-position: center;
         min-height: 320px;
+        width: auto;
     }
     
     #contacto::before {
@@ -87,31 +128,33 @@
     body::-webkit-scrollbar-thumb:hover {
         background: #414141;
     }
-
-
-    .accordion {
-        width: 100%;
-        max-width: fit-content;
-        margin: auto;
-        transition: all 0.4s ease;
-        padding: 15px;
+    
+    .accordion .card .btn-link {
+        text-decoration: none;
+    }
+    
+    .accordion .card .btn-link:hover {
+        color: #FFFFFF;
+    }
+    
+    .accordion .card .card-header button i {
+        float: right;
+    }
+    
+    .accordion .card-header {
+        background-color: #6C757D;
+    }
+    
+    .accordion .card-header h2 button {
+        font-weight: 600;
+        box-shadow: none;
+    }
+    
+    .accordion .card {
+        border-left: 1px solid #6C757D;
+        border-right: 1px solid #6C757D;
+        border-bottom: 1px solid #6C757D;
+        border-top: 1px solid #6C757D;
     }
 
-    .accordion i.fa-caret-down{
-        right: 12px;
-        left: auto;
-    }
 
-    img {
-        position: center;
-        width: 60%;
-        height: 50%;
-    }
-
-    h5 {
-        color: black;
-    }
-    .card-body {
-        text-align: justify;
-        padding-left: 30px;
-    }
