@@ -87,3 +87,31 @@
     body::-webkit-scrollbar-thumb:hover {
         background: #414141;
     }
+
+
+    .accordion {
+        width: 100%;
+        max-width: fit-content;
+        margin: auto;
+        transition: all 0.4s ease;
+        padding: 15px;
+    }
+
+    .accordion i.fa-caret-down{
+        right: 12px;
+        left: auto;
+    }
+
+    img {
+        position: center;
+        width: 60%;
+        height: 50%;
+    }
+
+    h5 {
+        color: black;
+    }
+    .card-body {
+        text-align: justify;
+        padding-left: 30px;
+    }
