@@ -8,176 +8,172 @@
     <title>Proyecto con Bootstrap</title>
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/scss" href="./css/text.scss">
-
-
-
-
-<!--
-    <style >
-        .accordion {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
-        }
-
-        .active, .accordion:hover {
-            background-color: #ccc;
-        }
-
-        .panel {
-            padding: 0 18px;
-            display: none;
-            background-color: wheat;
-            overflow: hidden;
-        }
-        .panel:hover{
-            background-color: #00dfdf;
-        }
-    </style>
--->
+    <!-- Tipo de letra css-->
+    <link rel="stylesheet" href="css/css3.css">
+    <!-- scroll raveal-->
+    <script src="js/scrollreveal.js"></script>
+    <!-- custom css-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Validaciones-->
+    <script src="js/validar.js"></script>
 </head>
 
 <body>
-    <h1>Prueba con bootstrap compiled</h1>
-    <p>Bienvenido</p>
-<hr>
-    <p>Sección de servicios</p>
-    <p>Acordeón de servicios</p>
-<hr>
-    <p>Acordeón de servicios básico usando sólo botones y con hover, solo se muestra un párrafo de texto por
-    sección de servicios y una foto al lado del texto</p>
-       <button class="accordion">Sección 1 </button>
-        <div class="panel">
-            <p>Panel de texto de prueba</p>
-            <p>En este acordeón se introducen los principios básicos para
-            su uso</p>
-            <p>Observe que se le incluyó una imagen al mismo</p>
-            <div class="view z-depth-1">
-                <img src="./img/logo.png" alt="" class="img-fluid">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 100vh;">
+                <img src="/src/img/tecnologia.jpg" style="height: 100vh;" class="d-block w-100 img-fluid " alt="...">
+                <div class="carousel-caption text-lg d-none d-md-block">
+                    <h5><b>First slide label</b></h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 100vh;">
+                <img src="/src/img/tecnologia2.jpg" style="height: 100vh;" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption text-lg d-none d-md-block">
+                    <h5><b>Second slide label</b></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 100vh;">
+                <img src="/src/img/tecnologia3.jpg" style="height: 100vh;" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption text-lg d-none d-md-block">
+                    <h5><b>Third slide label</b></h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Navegacion-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="/src/index.html">
+            <img src="/src/img/logo-intelix-white.png" width="130" height="35" loading="lazy" alt="Intelix logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#header">Servicios </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- Header-->
+    <header class="main-header" id="header">
+
+        <div class="container">
+            <h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam beatae blanditiis vero a nisi, totam porro! Minima, dolores. Nulla iusto in atque minus expedita sapiente ab, blanditiis nesciunt exercitationem nemo.
+            </h1>
+
+        </div>
+
+    </header>
+
+    <!-- Contacto-->
+
+
+    <footer class="pb-2">
+        <div class="container" id="contacto">
+            <div class="row">
+                <div class="text col-md-6 topmargin-sm">
+                    <h3>Contactanos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo nemo nisi ducimus modi ipsam, porro, quam iste aliquam maiores eaque mollitia minus quae ad dolorum laboriosam aut vero! Sapiente.</p>
+
+                </div>
+                <div class=" col-md-6 topmargin-sm">
+                    <form class="card" onsubmit="return validar();">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="text" id="nombre" placeholder="Nombre" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary btn-block">Enviar </button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
 
-
-    <button class="accordion">Sección 2: Servicios de prueba para Intelix </button>
-        <div class="panel">
-            <p>Sección 2.1: En esta sección se habla específicamente del tipo de actividades del servicio</p>
-        </div>
-
-
-<hr>
-<hr>
-    <i class="fas fa-camera-retro"></i>
-
- <p>Segundo acordeón de servicios con más funcionalidades, este fue realizado
- con cards.</p>
- <div class="accordion md-accordion accordion-3 z-depth-1-half" id="accordion2"
-      role="tablist" aria-multiselectable="true">
-     <h2 class="text-center text-uppercase">Servicios</h2>
-     <i class="fa fa-chevron-down" aria-hidden="true"></i>
-     <hr>
-    <div class="card card-img" background="img/logo.png">
-      <div class="card">
-         <!--Header-->
-         <div class="card-header" role="tab" id="heading3">
-             <a data-parent="#accordion2" href="#collapse2" data-toggle="collapse"
-             aria-expanded="true" aria-controls="collapse2">
-                 <h3 class}="mb-0 mt-3">
-                     Sección 1
-                 </h3>
-             </a>
-         </div>
-
-         <!--Cuerpo del card-->
-         <div id="collapse2" class="collapse show" role="tabpanel"
-              aria-labelledly="heading3" data-parent="#accordion2">
-             <div class="card-body pt-0">
-                 <p>Sección 1.1</p>
-             </div>
-
-         </div>
-
-      </div>
-
-
-
-     <div class="card">
-         <!--Header-->
-         <div class="card-header" role="tab" id="heading4">
-             <a data-parent="#accordion2" href="#collapse3" data-toggle="collapse"
-                aria-expanded="true" aria-controls="collapse3">
-                 <h3 class}="mb-0 mt-3">
-                     Sección 2
-                 </h3>
-             </a>
-         </div>
-
-         <!--Cuerpo del card-->
-         <div id="collapse3" class="collapse show" role="tabpanel"
-              aria-labelledly="heading4" data-parent="#accordion2">
-             <div class="card-body pt-0">
-                 <p>Sección 2.1</p>
-                 <div class="view z-depth-1 img">
-                     <img src="./img/logo.png" alt="" class="img-fluid">
-                 </div>
-             </div>
-
-         </div>
-
-     </div>
-
-   </div>
-
- </div>
-
-
-
-<hr>
-    <h2>Sección de servicios</h2>
-    <ul class="accordion-menu">
-        <li>
-            <div class="dropdown"><i class="fa fa-road" aria-hidden="true"></i>Sección 1
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </div>
-
-            <ul class="submenuItems">
-                <li><a href="#">Sección 1.1</a></li>
-                <li><a href="#"> Sección 1.2</a></li>
-                <li><a href="#"> Sección 1.3</a></li>
-            </ul>
-
-        </li>
-
-        <li>
-            <div class="dropdown"><i class="fa fa-road" aria-hidden="true"></i>Sección 2
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </div>
-
-            <ul class="submenuItems">
-                <li><a href="#">Sección 2.1</a></li>
-                <li><a href="#"> Sección 2.2</a></li>
-                <li><a href="#"> Sección 2.3</a></li>
-            </ul>
-
-        </li>
-
-
-    </ul>
-
+    </footer>
 
     <!-- Bootstrap js-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/acordeon.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.carousel', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+        sr.reveal('.navbar', {
+            duration: 2000,
+            origin: 'botton'
+        });
+
+        sr.reveal('.text', {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px'
+        });
+        sr.reveal('.card', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+        sr.reveal('.btn', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px',
+            delay: 1000
+        });
+        // smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
