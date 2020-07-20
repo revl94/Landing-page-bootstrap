@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,8 +8,6 @@
     <title>Proyecto con Bootstrap</title>
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <!--Font Awesome Icons-->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Tipo de letra css-->
     <link rel="stylesheet" href="css/css3.css">
@@ -19,8 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Validaciones-->
     <script src="js/validar.js"></script>
-
-    <script src="js/icon.js"></script>
+    <!-- fontawesome-->
+    <script src="js/f5c85842ec.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -77,14 +75,13 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#header">Servicios</a>
+                    <a class="nav-link" href="#header">Servicios </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca de</a>
+                    <a class="nav-link" href="#acercaDe">Acerca de</a>
                 </li>
                 <li class="nav-item">
-                   <a class="nav-link" href="#contacto"> Contacto</a>
-
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
 
@@ -93,124 +90,214 @@
     </nav>
 
     <!-- Header-->
-    <header class="main-header" id="header">
+    <header class="accordion-area pb-3 pt-4">
+        <div class="container" id="header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion pb-2 pt-4" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left text" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1 <i class="fas fa-plus"></i>
+                              </button>
+                                </h2>
+                            </div>
 
-        <div class="container" id="header" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg)">
-            <div class="accordion" id="accordion" role="tablist"
-                 aria-multiselectable="true">
-                <h2 class="text-uppercase text-center">Servicios</h2>
-                <hr class="mb-0">
-
-                <div class="card">
-
-                    <div class="card-header" role="tab" id="heading1">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
-                           aria-expanded="true" aria-controls="collapse1">
-                            <h5>
-                                <i class="fa fa-road" aria-hidden="false"></i> Sección 1: Automotriz
-                                <i class="fa fa-caret-down rotate-icon fa-xs "></i>
-                            </h5>
-                        </a>
-                    </div>
-                    <div id="collapse1" class="collapse show"
-                         role="tabpanel" data-parent="#accordion" aria-labelledby="heading1">
-
-                        <div clas="card-body text">
-                            <p>
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                                wolf moon officia aute,
-                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                accusamus labore sustainable VHS.
-                            </p>
-
-
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 mt-3 pt-2">
-                            <div class="view z-depth-1">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left text collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2 <i class="fas fa-plus"></i>
+                              </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left text collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3 <i class="fas fa-plus"></i>
+                              </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                <img src="https://mdbootstrap.com/img/Photos/Others/nature.jpeg" alt="" class="img-fluid">
+
+    </header>
+    <!-- Acerca de-->
+    <section class="pb-3">
+        <div class="container" id="acercaDe">
+            <div class="text text-center p-3">
+                <h1 class="text-black">Colaboradores</h1>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/person_icon.png" class="img-fluid rounded-circle w-50" alt=" Colaborador uno">
+                                <h3>Jane Doe</h3>
+                                Lorem ipsum dolor sit amet.
+                                <div class="d-flex flex-row justify-content-center pt-2">
+                                    <button type="button" class="btn btna btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Mas información
+                                    </button>
+
+                                </div>
                             </div>
                         </div>
 
                     </div>
-
-
-                </div>
-
-                <div class="card ">
-                    <div class="card-header" role="tab" id="heading2">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"
-                           aria-expanded="true" aria-controls="collapse2">
-
-                            <h5>
-                                <i class="fa fa-mobile fa-lg" aria-hidden="false"></i> Sección 2: Tecnología <i class="fa fa-caret-down fa-xs"></i></h5>
-
-                        </a>
-                    </div>
-                    <div id="collapse2" class="collapse show"
-                         role="tabpanel" data-parent="#accordion" aria-labelledby="heading2">
-
-                        <div clas="card-body pt-0">
-                            <p>
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                                wolf moon officia aute,
-                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                accusamus labore sustainable VHS.
-                            </p>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/person_icon.png" class="img-fluid rounded-circle w-50" alt=" Colaborador uno">
+                                <h3>Joe Doe</h3>
+                                Lorem ipsum dolor sit amet.
+                                <div class="d-flex flex-row justify-content-center pt-2">
+                                    <button type="button" class="btn btna btn-outline-secondary" data-toggle="modal" data-target="#infoModal2">Mas información
+                                    </button>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-
-
-                </div>
-
-                <div class="card">
-                    <div class="card-header" role="tab" id="heading3">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"
-                           aria-expanded="true" aria-controls="collapse3">
-
-                            <h5>
-                                <i class="fa fa-circle fa-lg" aria-hidden="false"></i> Sección 3: Comunicación <i class="fa fa-caret-down fa-xs"></i></h5>
-
-                        </a>
-                    </div>
-                    <div id="collapse3" class="collapse show"
-                         role="tabpanel" data-parent="#accordion" aria-labelledby="heading3">
-
-                        <div clas="card-body pt-0">
-                            <p>
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                                wolf moon officia aute,
-                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                accusamus labore sustainable VHS.
-                            </p>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/person_icon.png" class="img-fluid rounded-circle w-50" alt=" Colaborador uno">
+                                <h3>Jane Doe</h3>
+                                Lorem ipsum dolor sit amet.
+                                <div class="d-flex flex-row justify-content-center pt-2">
+                                    <button type="button" class="btn btna btn-outline-secondary" data-toggle="modal" data-target="#infoModal3">Mas información
+                                    </button>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/src/img/person_icon.png" class="img-fluid rounded-circle w-50" alt=" Colaborador uno">
+                                <h3>Joe Doe</h3>
+                                Lorem ipsum dolor sit amet.
+                                <div class="d-flex flex-row justify-content-center pt-2">
+                                    <button type="button" class="btn btna btn-outline-secondary" data-toggle="modal" data-target="#infoModal4">Mas información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-
+                    </div>
                 </div>
-
-
-
             </div>
         </div>
+    </section>
+    <!-- Modal1 -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Jane Doe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est animi, voluptas consequatur porro nam mollitia enim necessitatibus eligendi quia quae dolore dolorum odit iure laborum reprehenderit iusto id iste!</p>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="infoModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Joe Doe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est animi, voluptas consequatur porro nam mollitia enim necessitatibus eligendi quia quae dolore dolorum odit iure laborum reprehenderit iusto id iste!</p>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade" id="infoModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Jane Doe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est animi, voluptas consequatur porro nam mollitia enim necessitatibus eligendi quia quae dolore dolorum odit iure laborum reprehenderit iusto id iste!</p>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal4 -->
+    <div class="modal fade" id="infoModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Joe Doe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est animi, voluptas consequatur porro nam mollitia enim necessitatibus eligendi quia quae dolore dolorum odit iure laborum reprehenderit iusto id iste!</p>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Contacto-->
 
 
@@ -218,7 +305,7 @@
         <div class="container" id="contacto">
             <div class="row">
                 <div class="text col-md-6 topmargin-sm">
-                    <h3>Contáctanos</h3>
+                    <h3>Contactanos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo nemo nisi ducimus modi ipsam, porro, quam iste aliquam maiores eaque mollitia minus quae ad dolorum laboriosam aut vero! Sapiente.</p>
 
                 </div>
@@ -234,7 +321,7 @@
                             <div class="form-group">
                                 <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-outline-secondary btn-block">Enviar </button>
+                            <button type="submit" class="btn btn-outline-secondary btna btn-block">Enviar </button>
                         </div>
                     </form>
                 </div>
@@ -242,12 +329,7 @@
             </div>
         </div>
 
-
-
     </footer>
-
-
-
 
     <!-- Bootstrap js-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
@@ -275,7 +357,7 @@
             origin: 'bottom',
             distance: '300px'
         });
-        sr.reveal('.btn', {
+        sr.reveal('.btna', {
             duration: 2000,
             origin: 'bottom',
             distance: '300px',
@@ -290,6 +372,17 @@
                     behavior: 'smooth'
                 });
             });
+        });
+        $(document).ready(function() {
+            $('.collapse.show').each(function() {
+                $(this).prev('.card-header').find('.fas').addClass('fa-minus').removeClass('fa-plus');
+            });
+            $('.collapse').on('show.bs.collapse', function() {
+                $(this).prev('.card-header').find('.fas').removeClass('fa-plus').addClass('fa-minus');
+
+            }).on('hide.bs.collapse', function() {
+                $(this).prev('.card-header').find('.fas').removeClass('fa-minus').addClass('fa-plus');
+            })
         });
     </script>
 </body>
