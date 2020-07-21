@@ -7,6 +7,10 @@ body {
     color: #fff;
 }
 
+figure {
+    padding: 0; !important;
+}
+
 #header {
     position: relative;
     background-position: center;
