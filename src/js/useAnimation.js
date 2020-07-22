@@ -23,5 +23,5 @@ sr.reveal('.btna', {
     duration: 2000,
     origin: 'bottom',
     distance: '200px',
-    delay: 300
+    delay: 500
 });
