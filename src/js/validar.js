@@ -1,13 +1,13 @@
 function validar() {
-    var nombre, email, comentarios, expresion, expresionName;
+    // expresion, expresionName;
 
-    nombre = document.getElementById("nombre").value;
-    email = document.getElementById("email").value;
-    comentarios = document.getElementById("comentarios").value;
+    var nombre = $('#nombre').val(),
+        email = $('#email').val(),
+        comentarios = $('#comentarios').val();
 
     // Máscara para validación de Email y nombre
-    expresion = /\w+@\w+\.+[a-z]/;
-    expresionName = /\[a-z]/;
+    var expresion = /\w+@\w+\.+[a-z]/;
+    var expresionName = /^[a-zA-Z'.\s]{1,40}$/;
 
     if (nombre === "" || email === "" || comentarios === "") {
         alert("Todos los campos son obligatorios");
