@@ -8,16 +8,16 @@ body {
 }
 
 figure {
-    padding: 0; !important;
+    padding: 0 ! important;
 }
 
-#header {
+.servicios {
     position: relative;
     background-position: center;
     min-height: 320px;
 }
 
-#header::before {
+.servicios::before {
     content: "";
     background: url(../img/servicios.jpg);
     background-size: cover;
@@ -31,13 +31,13 @@ figure {
     opacity: .5;
 }
 
-#acercaDe {
+.acercaDe {
     position: relative;
     background-position: center;
     min-height: 320px;
 }
 
-#acercaDe::before {
+.acercaDe::before {
     content: "";
     background: url(../img/equipo.jpg);
     background-size: cover;
@@ -51,14 +51,14 @@ figure {
     opacity: .6;
 }
 
-#contacto {
+.contacto {
     position: relative;
     background-position: center;
     min-height: 320px;
     width: auto;
 }
 
-#contacto::before {
+.contacto::before {
     content: "";
     background: url(../img/contacto_background.jpg);
     background-size: cover;
