@@ -87,7 +87,7 @@
     </nav>
 
     <!-- Servicios-->
-    <section class="accordion-area pb-3 pt-4" id="header">
+    <section class="accordion-area pb-3 " id="header">
         <div class="container servicios">
             <div class="row ">
                 <div class="text text-center pl-3 pt-3">
@@ -311,25 +311,32 @@
 
                 </div>
                 <div class=" col-md-6 topmargin-sm">
-                    <form class="card" onsubmit="return validar();">
-                        <div class="card-body">
-                            <div class="form-group">
-                                <input type="text" id="nombre" placeholder="Nombre" class="form-control" required>
+                    <div class="span10 offset1">
 
+                        <form class="card" id="form1">
+                            <div id="alertNo" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">Complete todos los campos</div>
+                            <div id="alertNoLength" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">El nombre es muy largo</div>
+                            <div id="alertNoEspecial" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">El nombre no debe contener numeros ni caracteres especiales</div>
+                            <div id="alertNoCorreo" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">El correo no es valido</div>
+                            <div id="alertNoComentario" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">El comentarios es muy largo</div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" id="nombre" placeholder="Nombre" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="Email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control"></textarea>
+                                </div>
+                                <button type="submit" class="btn btna btn-outline-secondary btn-block">Enviar </button>
                             </div>
-                            <div class="form-group">
-                                <input id="email" placeholder="Email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btna btn-outline-secondary btn-block">Enviar </button>
-                        </div>
-                    </form>
+
+                        </form>
+                    </div>
+
                 </div>
-
             </div>
-        </div>
 
     </section>
 
@@ -348,7 +355,8 @@
     <script src="js/jQueryScrollReveal.js" type="text/javascript"></script>
     <script>$.fn.scrollReveal();</script>
     <!-- Validaciones-->
-    <script src="js/validar.js"></script>
+    <script src="js/validacionesFormulario.js"></script>
+
     <!-- fontawesome-->
     <script src="js/fontawesomeIcons.js" crossorigin="anonymous"></script>
     <!-- Animaciones-->
