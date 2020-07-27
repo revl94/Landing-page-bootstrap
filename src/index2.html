@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!-- custom css-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!--  <link rel="stylesheet" type="text/css" href="css/animate.css">-->
+
     <!-- Tipo de letra css-->
     <link rel="stylesheet" href="css/fonts.css">
 
@@ -19,7 +20,7 @@
 
 <body>
 
-<div id="carouselExampleCaptions" class="carousel slide js-reveal post" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active js-reveal"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -60,8 +61,8 @@
     </a>
 </div>
 
-<!-- Navegacion-->
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark js-reveal post">
+<!-- Navegación-->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark hidden">
     <a class="navbar-brand" href="/src/index.html">
         <img src="/src/img/logo-intelix-white.png" width="130" height="35" loading="lazy" alt="Intelix logo">
     </a>
@@ -91,13 +92,13 @@
 <section class="accordion-area pb-3 pt-4" id="header">
     <div class="container servicios">
         <div class="row ">
-            <div class="text text-center pl-3 pt-3 js-reveal">
-                <h1 class="text-black ">Servicios</h1>
+            <div class="text text-center pl-3 pt-3 js-reveal hidden">
+                <h1 class="text-black">Servicios</h1>
             </div>
 
             <div class="col-lg-12">
                 <div class="accordion pb-2 pt-1" id="accordionExample">
-                    <div class="card js-reveal">
+                    <div class="card js-reveal hidden">
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left text" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -114,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card js-reveal">
+                    <div class="card js-reveal hidden">
                         <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left text collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -130,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card js-reveal">
+                    <div class="card js-reveal hidden">
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left text collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -157,7 +158,7 @@
 <section class="pb-3" id="acercaDe">
     <div class="container acercaDe">
         <div class="text text-center p-3">
-            <h1 class="text-black js-reveal">Colaboradores</h1>
+            <h1 class="text-black">Colaboradores</h1>
             <div class="row js-reveal">
                 <div class="col-lg-3">
                     <div class="card">
@@ -358,7 +359,7 @@
 <script src="js/jQuerySmoothScrolling.js"></script>
 <script src="js/jQueryAddOrRevomeClass.js"></script>
 <script src="js/viewportchecker.js"></script>
-
+<!--
 <script type="text/javascript">
     jQuery(document).ready(function() {
         jQuery('.post').addClass("hidden").viewportChecker({
@@ -381,7 +382,7 @@
 
 
     });
-
+-->
 
 </script>
 </body>

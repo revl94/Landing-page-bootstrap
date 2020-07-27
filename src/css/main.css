@@ -1,6 +1,8 @@
 body {
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .navbar .nav-item .nav-link {
@@ -183,6 +185,22 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
-.nav{
-    opacity: 0;
+.navbar  {
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    transition: all 0.8s ease;
+
 }
+.text{
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    transition: all 0.8s ease;
+
+}
+.card {
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    transition: all 0.8s ease;
+
+}
+
