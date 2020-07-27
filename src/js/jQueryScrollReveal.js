@@ -16,10 +16,6 @@
                 $(this).addClass('js-reveal--hidden');
             }
         });
-        $carousel = $('.carousel');
-        $navbar = $('.navbar');
-        $text = $('.text');
-        //on scroll
         $(window).scroll(function (event) {
             //get the current scroll position
 
@@ -30,16 +26,9 @@
                     $(this).removeClass('js-reveal--hidden');
                 }
             });
-            // Prueba para animaciones
-            $('.carousel').animate({origin: 'top', distance:'300px', duration: 2000}, 2000);
-            $('.navbar').animate({origin: 'bottom', duration: 2000}, 2000);
-            $('.text').animate({origin: 'left', duration: 2000, distance: '300px'})
-
 
         });
-
         return this;
-
 
     };
 

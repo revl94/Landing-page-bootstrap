@@ -160,7 +160,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-bottom: 1px solid #6C757D;
     border-top: 1px solid #6C757D;
 }
-
+/*
 .js-reveal {
     opacity: 1;
     transition: opacity .7s ease-in, margin-top .7s ease-out;
@@ -169,6 +169,20 @@ body::-webkit-scrollbar-thumb:hover {
 .js-reveal--hidden {
     opacity: 0;
     margin-top: 3em;
+}*/
+
+/* Required */
+
+.hidden{
+    opacity: 0;
+
 }
 
+.visible{
+    opacity: 1;
 
+}
+
+.nav{
+    opacity: 0;
+}

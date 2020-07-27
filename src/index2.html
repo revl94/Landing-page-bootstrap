@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!-- custom css-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <!-- Tipo de letra css-->
     <link rel="stylesheet" href="css/fonts.css">
 
@@ -18,7 +19,7 @@
 
 <body>
 
-<div id="carouselExampleCaptions" class="carousel slide js-reveal" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide js-reveal post" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active js-reveal"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -60,7 +61,7 @@
 </div>
 
 <!-- Navegacion-->
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark js-reveal">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark js-reveal post">
     <a class="navbar-brand" href="/src/index.html">
         <img src="/src/img/logo-intelix-white.png" width="130" height="35" loading="lazy" alt="Intelix logo">
     </a>
@@ -345,8 +346,8 @@
 
 <!-- scroll raveal-->
 <!-- <script src="js/scrollreveal.js"></script>-->
-<script src="js/jQueryScrollReveal.js" type="text/javascript"></script>
-<script>$.fn.scrollReveal();</script>
+<!--<script src="js/jQueryScrollReveal.js"></script>-->
+<!--<script>$.fn.scrollReveal()</script>-->
 <!-- Validaciones-->
 <script src="js/validar.js"></script>
 <!-- fontawesome-->
@@ -356,7 +357,33 @@
 <script src="js/jQueryAnimate.js"></script>
 <script src="js/jQuerySmoothScrolling.js"></script>
 <script src="js/jQueryAddOrRevomeClass.js"></script>
+<script src="js/viewportchecker.js"></script>
 
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('.post').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+            offset: 20
+        });
+        jQuery('.text').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+            offset: 20
+        });
+        jQuery('.card').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+            offset: 20
+        });
+        jQuery('.btna').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+            offset: 20
+        });
+
+
+
+    });
+
+
+</script>
 </body>
 
 </html>

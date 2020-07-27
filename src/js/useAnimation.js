@@ -6,7 +6,7 @@ sr.reveal('.carousel', {
 });
 sr.reveal('.navbar', {
     duration: 2000,
-    origin: 'botton'
+    origin: 'bottom'
 });
 
 sr.reveal('.text', {
