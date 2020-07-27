@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
         var carousel = $('.carousel');
         if (position <0 ) {
             carousel.animate({top: 0, bottom: 50}, "slow")
-        };
+        }
 
         });
 });
