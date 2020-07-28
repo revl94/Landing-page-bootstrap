@@ -1,8 +1,6 @@
 body {
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
 }
 
 .navbar .nav-item .nav-link {
@@ -163,32 +161,40 @@ body::-webkit-scrollbar-thumb:hover {
     border-top: 1px solid #6C757D;
 }
 
-.hidden{
+.hidden {
     opacity: 0;
-
 }
 
-.navbar  {
+.navbar {
     transform-style: preserve-3d;
     transform: perspective(800px);
     transition: all 0.8s ease;
-
 }
 
-.sertx, .colabtx, .contx{
+.sertx,
+.colabtx,
+.contx {
     position: relative;
     opacity: 0;
-    left:-750px;
+    left: -750px;
 }
 
-.accCard, .colabcard, .concard {
+.accCard,
+.colabcard,
+.concard {
     position: relative;
     opacity: 0;
-    bottom:-750px;
+    bottom: -750px;
 }
 
 .btna {
     position: relative;
     opacity: 0;
-    bottom:-850px;
+    bottom: -850px;
+}
+
+.btnsa {
+    position: relative;
+    opacity: 0;
+    bottom: -850px;
 }
