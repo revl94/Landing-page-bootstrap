@@ -191,16 +191,21 @@ body::-webkit-scrollbar-thumb:hover {
     transition: all 0.8s ease;
 
 }
-.text{
-    transform-style: preserve-3d;
-    transform: perspective(800px);
-    transition: all 0.8s ease;
 
-}
-.card {
-    transform-style: preserve-3d;
-    transform: perspective(800px);
-    transition: all 0.8s ease;
-
+.sertx, .colabtx, .contx{
+    position: relative;
+    opacity: 0;
+    left:-750px;
 }
 
+.accCard, .colabcard, .concard {
+    position: relative;
+    opacity: 0;
+    bottom:-750px;
+}
+
+.btna {
+    position: relative;
+    opacity: 0;
+    bottom:-850px;
+}

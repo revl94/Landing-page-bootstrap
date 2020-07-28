@@ -20,35 +20,71 @@ jQuery(document).ready(function() {
       documentnav.on('scroll', function() {
           if ( documentnav.scrollTop() > navOffset && nav.hasClass('hidden') ) nav.removeClass('hidden');
       });
+/*          var serv = $('div.text'),
+              servOffset = serv.offset().top/8,
+              documentser = $(document);
 
-      var serv = $('div.text'),
-          servOffset = serv.offset().top/8,
-          documentser = $(document);
+          documentser.on('scroll', function() {
+              if ( documentser.scrollTop() > servOffset && serv.hasClass('hidden') ) serv.removeClass('hidden');
+          });
 
-      documentser.on('scroll', function() {
-          if ( documentser.scrollTop() > servOffset && serv.hasClass('hidden') ) serv.removeClass('hidden');
-      });
+          var acc = $('div.card'),
+              accvOffset = serv.offset().top/4,
+              documentacc = $(document);
 
-      var acc = $('div.card'),
-          accvOffset = serv.offset().top/4,
-          documentacc = $(document);
-
-      documentacc.on('scroll', function() {
-          if ( documentacc.scrollTop() > accvOffset && acc.hasClass('hidden') ) acc.removeClass('hidden');
-      });
-
+          documentacc.on('scroll', function() {
+              if ( documentacc.scrollTop() > accvOffset && acc.hasClass('hidden') ) acc.removeClass('hidden');
+          });*/
 
 
 
-   $(window).scroll(function() {
 
-        var position = $(window).scrollTop();
-        var carousel = $('.carousel');
-        if (position <0 ) {
-            carousel.animate({top: 0, bottom: 50}, "slow")
-        }
+   $(window).scroll(function () {
+    var position = $(window).scrollTop();
+       var animation = function () {
+           $('.accCard').each(function () {
+               $(this).delay(1000).animate({opacity:1, bottom: 0}, 2000)
 
-        });
+           })
+       };
+       var animation2 = function () {
+           $('.colabcard').each(function () {
+               $(this).delay(2000).animate({opacity:1, bottom: 0}, 2000)
+
+           })
+       };
+       var animation3 = function () {
+           $('.btna').each(function () {
+               $(this).delay(2000).animate({opacity:1, bottom: 0}, 2000)
+
+           })
+       };
+
+
+
+    /*if (position === 0 ){
+        $('.carousel').animate({opacity:1, top: 0}, 'fast')
+    }else*/
+    if (position >0 && position < 45000) {
+      $('.sertx').delay(1000).animate({opacity:1, left: 0}, 2000);
+      animation();
+      $('.colabtx').delay(2000).animate({opacity:1, left: 0}, 2000, "linear");
+      animation2();
+      animation3();
+      $('.contx').delay(3000).animate({opacity:1, left: 0}, 2000);
+       $('.concard').delay(1000).animate({opacity:1, bottom: 0}, 2000);
+
+
+
+
+    }
+
+
+   });
+
+
+
+
 });
 
 
