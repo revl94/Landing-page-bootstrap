@@ -160,3 +160,41 @@ body::-webkit-scrollbar-thumb:hover {
     border-bottom: 1px solid #6C757D;
     border-top: 1px solid #6C757D;
 }
+
+.hidden {
+    opacity: 0;
+}
+
+.navbar {
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    transition: all 0.8s ease;
+}
+
+.sertx,
+.colabtx,
+.contx {
+    position: relative;
+    opacity: 0;
+    left: -750px;
+}
+
+.accCard,
+.colabcard,
+.concard {
+    position: relative;
+    opacity: 0;
+    bottom: -750px;
+}
+
+.btna {
+    position: relative;
+    opacity: 0;
+    bottom: -850px;
+}
+
+.btnsa {
+    position: relative;
+    opacity: 0;
+    bottom: -850px;
+}

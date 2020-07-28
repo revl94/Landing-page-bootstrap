@@ -60,7 +60,7 @@
     </div>
 
     <!-- Navegacion-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark hidden">
         <a class="navbar-brand" href="/src/index.html">
             <img src="/src/img/logo-intelix-white.png" width="130" height="35" loading="lazy" alt="Intelix logo">
         </a>
@@ -90,12 +90,12 @@
     <section class="accordion-area pb-3 " id="header">
         <div class="container servicios">
             <div class="row ">
-                <div class="text text-center pl-3 pt-3">
+                <div class="sertx text text-center pl-3 pt-3">
                     <h1 class="text-black ">Servicios</h1>
                 </div>
 
                 <div class="col-lg-12">
-                    <div class="accordion pb-2 pt-1" id="accordionExample">
+                    <div class="accordion pb-2 pt-1 accCard" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
@@ -156,8 +156,8 @@
     <section class="pb-3" id="acercaDe">
         <div class="container acercaDe">
             <div class="text text-center p-3">
-                <h1 class="text-black">Colaboradores</h1>
-                <div class="row">
+                <h1 class="text-black colabtx">Colaboradores</h1>
+                <div class="row colabcard">
                     <div class="col-lg-3">
                         <div class="card">
                             <div class="card-body">
@@ -305,15 +305,15 @@
     <section class="pb-2" id="contacto">
         <div class="container contacto">
             <div class="row">
-                <div class="text col-md-6 topmargin-sm">
-                    <h3>Contactanos</h3>
+                <div class="text col-md-6 topmargin-sm contx">
+                    <h3>Contáctanos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt explicabo nemo nisi ducimus modi ipsam, porro, quam iste aliquam maiores eaque mollitia minus quae ad dolorum laboriosam aut vero! Sapiente.</p>
 
                 </div>
                 <div class=" col-md-6 topmargin-sm">
                     <div class="span10 offset1">
 
-                        <form class="card" id="form1">
+                        <form class="card concard" id="form1">
                             <div id="alertNo" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">Complete todos los campos</div>
                             <div id="alertNoLength" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">El nombre es muy largo</div>
                             <div id="alertNoEspecial" class="alert alert-danger mr-2 ml-2 mt-2" role="alert">El nombre no debe contener numeros ni caracteres especiales</div>
@@ -329,7 +329,7 @@
                                 <div class="form-group">
                                     <textarea rows="1" cols="30" id="comentarios" placeholder="Mensaje" class="form-control"></textarea>
                                 </div>
-                                <button type="submit" class="btn btna btn-outline-secondary btn-block">Enviar </button>
+                                <button type="submit" class="btn btnsa btn-outline-secondary btn-block">Enviar </button>
                             </div>
 
                         </form>
@@ -358,19 +358,9 @@
     <!-- fontawesome-->
     <script src="js/fontawesomeIcons.js" crossorigin="anonymous"></script>
     <!-- Animaciones-->
-    <script src="js/useAnimation.js"></script>
+    <script src="js/jQueryAnimate.js"></script>
     <script src="js/jQuerySmoothScrolling.js"></script>
     <script src="js/jQueryAddOrRevomeClass.js"></script>
-
-</body>
-
-</html>
-
-</body>
-
-</html>
-
-</html>
 
 </body>
 
