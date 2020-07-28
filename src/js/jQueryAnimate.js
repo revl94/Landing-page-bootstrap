@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
 
     $(window).scroll(function() {
         var position = $(window).scrollTop();
-        console.log(position)
+        console.log(position);
         var animation = function() {
             $('.accCard').each(function() {
                 $(this).delay(1000).animate({ opacity: 1, bottom: 0 }, 2000);
