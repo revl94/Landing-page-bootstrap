@@ -18,14 +18,14 @@ function validar() {
         alert("El nombre es muy largo");
         return false;
     } else if (!expresionName.test(nombre)) {
-        alert("El nombre no debe contener numeros ni caracteres especiales");
+        alert("El nombre no debe contener números ni caracteres especiales");
         return false;
     } else
     if (email.length > 100) {
         alert("El correo es muy largo");
         return false;
     } else if (!expresion.test(email)) {
-        alert("El correo no es valido");
+        alert("El correo no es válido");
         return false;
 
     } else if (comentarios.length > 1024) {
