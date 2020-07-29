@@ -199,3 +199,7 @@ body::-webkit-scrollbar-thumb:hover {
     bottom: -850px;
 }
 
+.page-section{
+    padding: 5rem 0;
+
+}
