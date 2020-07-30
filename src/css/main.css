@@ -15,7 +15,7 @@ figure {
     position: relative;
     background-position: center;
     min-height: 360px;
-    height: 500px;
+    height: 100vh;
 
 
 }
@@ -38,7 +38,7 @@ figure {
     position: relative;
     background-position: center;
     min-height: 320px;
-    height: 550px;
+    height: 100vh;
 }
 
 .acercaDe::before {
@@ -61,7 +61,7 @@ figure {
     min-height: 320px;
     width: auto;
     margin-bottom: 2rem;
-    height: 500px;
+    height: 100vh;
 }
 
 .contacto::before {
@@ -203,10 +203,4 @@ body::-webkit-scrollbar-thumb:hover {
     position: relative;
     opacity: 0;
     bottom: -850px;
-}
-
-section {
-    padding: 1.5rem 0;
-    margin-top: 1rem;
-
 }
