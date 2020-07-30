@@ -14,8 +14,10 @@ figure {
 .servicios {
     position: relative;
     background-position: center;
-    min-height: 320px;
-    margin-bottom: 6rem;
+    min-height: 360px;
+    height: 500px;
+
+
 }
 
 .servicios::before {
@@ -36,7 +38,7 @@ figure {
     position: relative;
     background-position: center;
     min-height: 320px;
-    margin-bottom: 6rem;
+    height: 550px;
 }
 
 .acercaDe::before {
@@ -59,6 +61,7 @@ figure {
     min-height: 320px;
     width: auto;
     margin-bottom: 2rem;
+    height: 500px;
 }
 
 .contacto::before {
@@ -202,7 +205,8 @@ body::-webkit-scrollbar-thumb:hover {
     bottom: -850px;
 }
 
-.page-section{
-    padding: 5rem 0;
-
+section {
+    padding: 6rem 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
