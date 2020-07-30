@@ -11,10 +11,14 @@ figure {
     padding: 0 ! important;
 }
 
+section {
+    height: 100vh;
+}
+
 .servicios {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
 }
 
 .servicios::before {
@@ -34,7 +38,7 @@ figure {
 .acercaDe {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
 }
 
 .acercaDe::before {
@@ -54,7 +58,7 @@ figure {
 .contacto {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
     width: auto;
 }
 
