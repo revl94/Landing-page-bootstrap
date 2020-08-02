@@ -11,10 +11,6 @@ figure {
     padding: 0 ! important;
 }
 
-section {
-    height: 100vh;
-}
-
 .servicios {
     position: relative;
     background-position: center;
@@ -24,7 +20,7 @@ section {
 .servicios::before {
     content: "";
     background: url(../img/servicios.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
