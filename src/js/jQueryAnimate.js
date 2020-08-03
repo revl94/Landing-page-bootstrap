@@ -37,16 +37,16 @@ jQuery(document).ready(function() {
         };
 
 
-        if (position > 0 && position < 630) {
+        if (position > 0 && position < 400) {
             $('.sertx').delay(1000).animate({ opacity: 1, left: 0 }, 1500);
             animation();
 
 
-        } else if (position > 630 && position < 900) {
+        } else if (position > 630 && position < 1000) {
             $('.colabtx').delay(1500).animate({ opacity: 1, left: 0 }, 1000, "linear");
             animation2();
             animation3();
-        } else if (position > 900) {
+        } else if (position > 1000) {
             $('.contx').delay(1000).animate({ opacity: 1, left: 0 }, 1500);
             $('.concard').delay(1000).animate({ opacity: 1, bottom: 0 }, 1500);
             animation4();

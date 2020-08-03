@@ -14,13 +14,13 @@ figure {
 .servicios {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
 }
 
 .servicios::before {
     content: "";
     background: url(../img/servicios.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -34,7 +34,7 @@ figure {
 .acercaDe {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
 }
 
 .acercaDe::before {
@@ -54,7 +54,7 @@ figure {
 .contacto {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
     width: auto;
 }
 
