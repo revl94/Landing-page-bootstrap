@@ -14,13 +14,13 @@ figure {
 .servicios {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
 }
 
 .servicios::before {
     content: "";
     background: url(../img/servicios.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -34,13 +34,13 @@ figure {
 .acercaDe {
     position: relative;
     background-position: center;
-    min-height: 320px;
+    height: 100vh;
 }
 
 .acercaDe::before {
     content: "";
     background: url(../img/equipo.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -54,14 +54,13 @@ figure {
 .contacto {
     position: relative;
     background-position: center;
-    min-height: 320px;
-    width: auto;
+    height: 100vh;
 }
 
 .contacto::before {
     content: "";
     background: url(../img/contacto_background.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -199,8 +198,13 @@ body::-webkit-scrollbar-thumb:hover {
     bottom: -850px;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) and (max-height: 640px) {
     .accCard {
-        padding: 0 15px;
+        font-size: 13px;
+        padding-bottom: 15px;
     }
+    div .card-body {
+        padding: 17px;
+    }
+
 }
