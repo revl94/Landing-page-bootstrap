@@ -14,14 +14,13 @@ figure {
 .servicios {
     position: relative;
     background-position: center;
-    min-height: 360px;
     height: 100vh;
 }
 
 .servicios::before {
     content: "";
     background: url(../img/servicios.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -35,14 +34,13 @@ figure {
 .acercaDe {
     position: relative;
     background-position: center;
-    min-height: 320px;
     height: 100vh;
 }
 
 .acercaDe::before {
     content: "";
     background: url(../img/equipo.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -56,16 +54,13 @@ figure {
 .contacto {
     position: relative;
     background-position: center;
-    min-height: 320px;
-    width: auto;
-    margin-bottom: 1rem;
     height: 100vh;
 }
 
 .contacto::before {
     content: "";
     background: url(../img/contacto_background.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -202,25 +197,3 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     bottom: -850px;
 }
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-/*Media queries*/
-/*
-@media (min-width: 576px) {
-    
-}
-@media (min-width: 768px) {
-
-}
-@media (min-width: 992px) {
-
-}
-@media (min-width: 1200px) {
-
-}
-
-*/
