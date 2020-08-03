@@ -14,13 +14,13 @@ figure {
 .servicios {
     position: relative;
     background-position: center;
-    height: 100vh;
+    min-height: 320px;
 }
 
 .servicios::before {
     content: "";
     background: url(../img/servicios.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -34,13 +34,13 @@ figure {
 .acercaDe {
     position: relative;
     background-position: center;
-    height: 100vh;
+    min-height: 320px;
 }
 
 .acercaDe::before {
     content: "";
     background: url(../img/equipo.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -54,13 +54,14 @@ figure {
 .contacto {
     position: relative;
     background-position: center;
-    height: 100vh;
+    min-height: 320px;
+    width: auto;
 }
 
 .contacto::before {
     content: "";
     background: url(../img/contacto_background.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
