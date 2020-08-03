@@ -85,7 +85,7 @@ figure {
     font-weight: bold;
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) {
     .text-acc {
         color: black;
         text-align: justify;
@@ -115,7 +115,7 @@ figure {
     }
 }
 
-@media (min-width:576px) and (max-width: 992px) {
+@media screen and (min-width:576px) and (max-width: 992px) {
     .topmargin-sm {
         margin-top: 30px;
     }
@@ -148,37 +148,9 @@ figure {
     }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .topmargin-sm {
         margin-top: 30px;
-    }
-}
-
-@media (max-height:639px) {
-    .card-sm {
-        width: 115px;
-        margin: auto auto;
-        height: 114px;
-    }
-    .text-sm {
-        font-size: 8px;
-        margin-bottom: 0.1rem
-    }
-    .text-xs {
-        margin-bottom: 0.1rem
-    }
-    figure {
-        margin: 0 0 0.1rem;
-    }
-    .btn-sm {
-        opacity: 1;
-        bottom: 0px;
-        font-size: 7px;
-        height: 15px;
-        width: 90px;
-    }
-    .topmargin-sm {
-        margin-top: 19px;
     }
 }
 
