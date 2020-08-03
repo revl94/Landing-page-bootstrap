@@ -16,8 +16,6 @@ figure {
     background-position: center;
     min-height: 360px;
     height: 100vh;
-
-
 }
 
 .servicios::before {
@@ -204,3 +202,25 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     bottom: -850px;
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Media queries*/
+/*
+@media (min-width: 576px) {
+    
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+
+*/
