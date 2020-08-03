@@ -198,13 +198,23 @@ body::-webkit-scrollbar-thumb:hover {
     bottom: -850px;
 }
 
-@media (max-width: 320px) and (max-height: 640px) {
+@media (min-width: 320px) and (min-height: 640px) {
     .accCard {
         font-size: 13px;
         padding-bottom: 15px;
     }
     div .card-body {
-        padding: 17px;
+        padding: 15px;
+    }
+    .colabcard {
+        font-size: 13px;
+        width: 320px;
+        margin-right: 80px;
+        margin-bottom: 50px;
+    }
+
+    .col-lg-3{
+        width: 50%;
     }
 
 }
