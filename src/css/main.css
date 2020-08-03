@@ -40,7 +40,7 @@ figure {
 .acercaDe::before {
     content: "";
     background: url(../img/equipo.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -55,13 +55,12 @@ figure {
     position: relative;
     background-position: center;
     height: 100vh;
-    width: auto;
 }
 
 .contacto::before {
     content: "";
     background: url(../img/contacto_background.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
