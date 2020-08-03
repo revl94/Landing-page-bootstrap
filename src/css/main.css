@@ -198,7 +198,7 @@ body::-webkit-scrollbar-thumb:hover {
     bottom: -850px;
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 320px) and (min-height: 640px) {
     .accCard {
         font-size: 13px;
         padding-bottom: 15px;
@@ -207,18 +207,18 @@ body::-webkit-scrollbar-thumb:hover {
         padding: 15px;
     }
     .colabcard {
-        font-size: 13px;
-        width: 313px;
+        font-size: 12px;
+        width: 336px;
         margin-bottom: 50px;
     }
 
     .col-lg-3{
-        width: 50%;
+        width: 44%;
     }
 
 }
 
-
+/*
 @media (min-width: 420px)  and (max-width: 540px){
     .accCard {
         font-size: 13px;
@@ -274,3 +274,4 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
 }
+*/
