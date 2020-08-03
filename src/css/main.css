@@ -198,3 +198,9 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     bottom: -850px;
 }
+
+@media (min-width: 320px) {
+    .accCard {
+        padding: 0 15px;
+    }
+}
