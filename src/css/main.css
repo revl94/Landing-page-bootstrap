@@ -146,6 +146,7 @@ figure {
     .topmargin-sm {
         margin-top: 19px;
     }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -262,7 +263,7 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     bottom: -850px;
 }
-
+/*
 @media (min-width: 320px) and (min-height: 640px) {
     .accCard {
         font-size: 13px;
