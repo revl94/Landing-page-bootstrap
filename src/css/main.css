@@ -85,11 +85,41 @@ figure {
     font-weight: bold;
 }
 
-@media screen and (max-width:576px) {
+@media (max-width:576px) {
     .text-acc {
         color: black;
         text-align: justify;
+        font-size: 11px;
+    }
+    .card-sm {
+        width: 120px;
+        margin: auto auto;
+        height: 140px;
+    }
+    .text-sm {
         font-size: 10px;
+        margin-bottom: 0.1rem
+    }
+    figure {
+        margin: 0 0 0.1rem;
+    }
+    .btn-sm {
+        opacity: 1;
+        bottom: 0px;
+        font-size: 8px;
+        height: 20px;
+        width: 90px;
+    }
+    .topmargin-sm {
+        margin-top: 19px;
+    }
+}
+
+@media (min-width: 576px) {
+    .text-acc {
+        color: black;
+        text-align: justify;
+        font-size: 15px;
     }
     .card-sm {
         width: 120px;
@@ -115,7 +145,7 @@ figure {
     }
 }
 
-@media screen and (min-width:576px) and (max-width: 992px) {
+@media (min-width: 768px) {
     .topmargin-sm {
         margin-top: 30px;
     }
@@ -125,13 +155,13 @@ figure {
         font-size: 15px;
     }
     .card-sm {
-        width: 220px;
+        width: 210px;
         margin: auto auto;
-        height: 225px;
+        height: 230px;
     }
     .text-sm {
-        font-size: 17px;
-        margin-bottom: 0.1rem
+        font-size: 15px;
+        margin-bottom: 0.3rem
     }
     figure {
         margin: 0 0 0.1rem;
@@ -139,17 +169,17 @@ figure {
     .btn-sm {
         opacity: 1;
         bottom: 0px;
-        font-size: 15px;
+        font-size: 14px;
         height: 30px;
-        width: 140px;
+        width: 145px;
     }
     .topmargin-sm {
-        margin-top: 19px;
+        margin-top: 30px;
     }
 
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .topmargin-sm {
         margin-top: 30px;
     }
