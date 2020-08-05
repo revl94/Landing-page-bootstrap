@@ -1,119 +1,118 @@
 body {
-    font-family: 'Playfair Display', serif;
-    font-family: 'Titillium Web', sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .navbar .nav-item .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 figure {
-    padding: 0 ! important;
+  padding: 0 !important;
 }
 
 .servicios {
-    position: relative;
-    background-position: center;
-    height: 100vh;
+  position: relative;
+  background-position: center;
+  height: 100vh;
 }
 
 .servicios::before {
-    content: "";
-    background: url(../img/servicios_peque.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: .5;
+  content: "";
+  background: url(../img/servicios_peque.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 .acercaDe {
-    position: relative;
-    background-position: center;
-    height: 100vh;
+  position: relative;
+  background-position: center;
+  height: 100vh;
 }
 
 .acercaDe::before {
-    content: "";
-    background: url(../img/equipo.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: .6;
+  content: "";
+  background: url(../img/equipo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
 }
 
 .contacto {
-    position: relative;
-    background-position: center;
-    height: 100vh;
+  position: relative;
+  background-position: center;
+  height: 100vh;
 }
 
 .contacto::before {
-    content: "";
-    background: url(../img/contacto_background.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: .5;
+  content: "";
+  background: url(../img/contacto_background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 .text {
-    position: relative;
-    color: black;
-    text-align: justify;
-    padding-left: 30px
+  position: relative;
+  color: black;
+  text-align: justify;
+  padding-left: 30px;
 }
 
 .text-lg {
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-@media (max-width:576px) {
-    .text-acc {
-        color: black;
-        text-align: justify;
-        font-size: 11px;
-    }
-    .card-sm {
-        width: 120px;
-        margin: auto auto;
-        height: 134px;
-    }
-
-    .text-sm {
-        font-size: 10px;
-        margin-bottom: 0.1rem
-    }
-    figure {
-        margin: 0 0 0.1rem;
-    }
-    .btn-sm {
-        opacity: 1;
-        bottom: 0px;
-        font-size: 8px;
-        height: 20px;
-        width: 90px;
-    }
-    .topmargin-sm {
-        margin-top: 19px;
-    }
+@media (max-width: 576px) {
+  .text-acc {
+    color: black;
+    text-align: justify;
+    font-size: 11px;
+  }
+  .card-sm {
+    width: 120px;
+    margin: auto auto;
+    height: 140px;
+  }
+  .text-sm {
+    font-size: 10px;
+    margin-bottom: 0.1rem;
+  }
+  figure {
+    margin: 0 0 0.1rem;
+  }
+  .btn-sm {
+    opacity: 1;
+    bottom: 0px;
+    font-size: 8px;
+    height: 20px;
+    width: 90px;
+  }
+  .topmargin-sm {
+    margin-top: 19px;
+  }
 }
 
 
@@ -146,89 +145,86 @@ figure {
 }
 
 @media (min-width: 576px) {
-    .text-acc {
-        color: black;
-        text-align: justify;
-        font-size: 15px;
-    }
-    .card-sm {
-        width: 120px;
-        margin: auto auto;
-        height: 130px;
-
-    }
-    .text-sm {
-        font-size: 10px;
-        margin-bottom: 0.1rem
-    }
-
-    figure {
-        margin: 0 0 0.1rem;
-    }
-    .btn-sm {
-        opacity: 1;
-        bottom: 0px;
-        font-size: 8px;
-        height: 20px;
-        width: 90px;
-    }
-    .topmargin-sm {
-        margin-top: 19px;
-    }
+  .text-acc {
+    color: black;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .card-sm {
+    width: 120px;
+    margin: auto auto;
+    height: 130px;
+  }
+  .text-sm {
+    font-size: 10px;
+    margin-bottom: 0.1rem;
+  }
+  figure {
+    margin: 0 0 0.1rem;
+  }
+  .btn-sm {
+    opacity: 1;
+    bottom: 0px;
+    font-size: 8px;
+    height: 20px;
+    width: 90px;
+  }
+  .topmargin-sm {
+    margin-top: 19px;
+  }
 }
 
 @media (min-width: 768px) {
-    .topmargin-sm {
-        margin-top: 30px;
-    }
-    .text-acc {
-        color: black;
-        text-align: justify;
-        font-size: 15px;
-    }
-    .card-sm {
-        width: 210px;
-        margin: auto auto;
-        height: 230px;
-    }
-    .text-sm {
-        font-size: 15px;
-        margin-bottom: 0.3rem
-    }
-    figure {
-        margin: 0 0 0.1rem;
-    }
-    .btn-sm {
-        opacity: 1;
-        bottom: 0px;
-        font-size: 14px;
-        height: 30px;
-        width: 145px;
-    }
-    .topmargin-sm {
-        margin-top: 30px;
-    }
-
+  .topmargin-sm {
+    margin-top: 30px;
+  }
+  .text-acc {
+    color: black;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .card-sm {
+    width: 210px;
+    margin: auto auto;
+    height: 230px;
+  }
+  .text-sm {
+    font-size: 15px;
+    margin-bottom: 0.3rem;
+  }
+  figure {
+    margin: 0 0 0.1rem;
+  }
+  .btn-sm {
+    opacity: 1;
+    bottom: 0px;
+    font-size: 14px;
+    height: 30px;
+    width: 145px;
+  }
+  .topmargin-sm {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 992px) {
-    .topmargin-sm {
-        margin-top: 30px;
-    }
+  .topmargin-sm {
+    margin-top: 30px;
+  }
 }
 
 .form-control {
-    font-size: 14px;
-    border: 1px solid #f5f5f5;
-    padding: 15px;
-    border-radius: 2px;
-    height: auto;
+  font-size: 14px;
+  border: 1px solid #f5f5f5;
+  padding: 15px;
+  border-radius: 2px;
+  height: auto;
 }
 
 .form-control:focus {
-    border: 1px solid #1a1a1a;
-    outline: none;
-    box-shadow: none;
+  border: 1px solid #1a1a1a;
+  outline: none;
+  box-shadow: none;
 }
 
 .topmargin-xs {
@@ -325,4 +321,3 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     bottom: -850px;
 }
-
