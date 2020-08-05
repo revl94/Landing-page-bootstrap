@@ -94,8 +94,9 @@ figure {
     .card-sm {
         width: 120px;
         margin: auto auto;
-        height: 140px;
+        height: 134px;
     }
+
     .text-sm {
         font-size: 10px;
         margin-bottom: 0.1rem
@@ -115,6 +116,35 @@ figure {
     }
 }
 
+
+@media (min-width: 320px) and (max-height:600px) {
+    .card-sm {
+        width: 130px;
+        margin: auto auto;
+        height: 117px;
+    }
+    .text-sm {
+        font-size: 7px;
+        margin-bottom: 0.1rem
+    }
+
+    figure {
+        margin: 0 0 0.1rem;
+    }
+    .btn-sm {
+        opacity: 1;
+        bottom: 0px;
+        font-size: 7px;
+        height: 18px;
+        width: 90px;
+    }
+    .topmargin-sm {
+        margin-top: 19px;
+    }
+
+
+}
+
 @media (min-width: 576px) {
     .text-acc {
         color: black;
@@ -125,11 +155,13 @@ figure {
         width: 120px;
         margin: auto auto;
         height: 130px;
+
     }
     .text-sm {
         font-size: 10px;
         margin-bottom: 0.1rem
     }
+
     figure {
         margin: 0 0 0.1rem;
     }
