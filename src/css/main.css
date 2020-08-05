@@ -11,15 +11,15 @@ figure {
     padding: 0 !important;
 }
 
-.servicios {
+.services {
     position: relative;
     background-position: center;
     height: 100vh;
 }
 
-.servicios::before {
+.services::before {
     content: "";
-    background: url(../img/servicios_peque.jpg);
+    background: url(../img/services.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,15 +31,15 @@ figure {
     opacity: 0.5;
 }
 
-.acercaDe {
+.about {
     position: relative;
     background-position: center;
     height: 100vh;
 }
 
-.acercaDe::before {
+.about::before {
     content: "";
-    background: url(../img/equipo.jpg);
+    background: url(../img/team.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,15 +51,15 @@ figure {
     opacity: 0.6;
 }
 
-.contacto {
+.contact {
     position: relative;
     background-position: center;
     height: 100vh;
 }
 
-.contacto::before {
+.contact::before {
     content: "";
-    background: url(../img/contacto_background.jpg);
+    background: url(../img/contact_background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
